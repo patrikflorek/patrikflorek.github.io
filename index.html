@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kurza &ndash; Bluetooth Touchpad for PC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <div class="hero__brand">
+        <div class="hero__logo-swatch">
+          <img src="assets/logo.svg" alt="Kurza logo" class="hero__logo" />
+        </div>
+        <div class="hero__brand-text">
+          <div class="hero__wordmark">Kurza</div>
+          <p class="hero__tag">A couch potato&rsquo;s best friend</p>
+        </div>
+      </div>
+      <h1>Too lazy to get up for the mouse?</h1>
+      <p class="hero__lead">
+        Kurza turns your Android phone into a Bluetooth touchpad because walking three meters to your desk is basically
+        cardio. Works with Windows, macOS, and Linux&mdash;no drivers, no desktop software, no excuses.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#" id="cta-google-play">Get it on Google Play</a>
+        <a class="button button--ghost" href="https://github.com/patrikflorek/kurza" target="_blank" rel="noopener">View
+          the vibe-coded source</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section origin-story" id="story">
+      <div class="origin-story__content">
+        <h2>The origin story</h2>
+        <p>
+          I wanted to control my PC from the couch. That&rsquo;s it. That&rsquo;s the whole product vision.
+        </p>
+        <p>
+          Did I check if something like this already exists? <strong>Absolutely not.</strong> I just mass prompted an AI
+          until something worked, fixed a few bugs by hand, and called it a day. Welcome to vibe coding.
+        </p>
+        <p class="disclaimer">
+          If there&rsquo;s a better app out there, I genuinely don&rsquo;t want to know.
+        </p>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <h2>Features (that somehow work)</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Native Bluetooth HID</h3>
+          <p>
+            Your phone pretends to be a mouse. Your computer believes it. Everyone&rsquo;s happy. No drivers
+            needed&mdash;it just works like magic (or, you know, like a standard protocol).
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Touchpad-ish experience</h3>
+          <p>
+            Drag to move the cursor, tap to click, two-finger scroll. It&rsquo;s not a MacBook trackpad, but it&rsquo;s
+            good enough for Netflix browsing from the couch.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Auto-reconnect</h3>
+          <p>
+            Wake your phone, Kurza reconnects. Because manually tapping &ldquo;Connect&rdquo; every time would require
+            effort, and we&rsquo;re not about that life.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section how" id="how-it-works">
+      <div class="how__content">
+        <h2>How to use it</h2>
+        <p>
+          It&rsquo;s not rocket science, but Bluetooth pairing can be... temperamental. Here&rsquo;s the drill:
+        </p>
+        <ol class="steps">
+          <li>Open Kurza.</li>
+          <li>
+            Tap <strong>Turn on Bluetooth</strong> if it is not already
+            <div class="screenshot-container">
+              <div class="screenshots">
+                <img src="assets/bt_on.png" alt="Turn on modal" class="gallery__img" />
+                <img src="assets/bt_on_toast.png" alt="Turn on toast" class="gallery__img" />
+              </div>
+            </div>
+          </li>
+          <li>
+            Tap <strong>Make Discoverable</strong> if you run the app for the first time or connecting to a new PC.
+            <div class="screenshot-container">
+              <div class="screenshots">
+                <img src="assets/discover.png" alt="Make discoverable modal" class="gallery__img" />
+                <img src="assets/discover_toast.png" alt="Make discoverable toast" class="gallery__img" />
+              </div>
+            </div>
+          </li>
+          <li>On your computer, add a new Bluetooth device. Pick your phone.</li>
+          <li>
+            Back in Kurza, pair with the computer.
+            <div class="screenshot-container">
+              <div class="screenshots">
+                <img src="assets/pair.png" alt="Pair with PC" class="gallery__img" />
+              </div>
+            </div>
+          </li>
+          <li>
+            Tap your computer&rsquo;s name.
+            <div class="screenshot-container">
+              <div class="screenshots">
+                <img src="assets/connect.png" alt="Connect to PC" class="gallery__img" />
+              </div>
+            </div>
+          </li>
+          <li>
+            Done. You&rsquo;re now a wireless mouse.
+            <div class="screenshot-container">
+              <div class="screenshots">
+                <img src="assets/running.png" alt="Running app" class="gallery__img" />
+              </div>
+            </div>
+          </li>
+        </ol>
+        <p class="hint">
+          Pro tip: If it doesn&rsquo;t connect, unpair everything and start over. Bluetooth respects persistence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section requirements" id="requirements">
+      <h2>What you need</h2>
+      <div class="requirement-grid">
+        <div class="requirement-card">
+          <h3>Android 9+</h3>
+          <p>
+            Any phone from the last half-decade should work. If yours doesn&rsquo;t, maybe it&rsquo;s time to upgrade
+            anyway.
+          </p>
+        </div>
+        <div class="requirement-card">
+          <h3>A computer with Bluetooth</h3>
+          <p>
+            Windows, macOS, Linux&mdash;Kurza doesn&rsquo;t discriminate. If it can pair a mouse, it can pair Kurza.
+          </p>
+        </div>
+        <div class="requirement-card">
+          <h3>A couch (optional but recommended)</h3>
+          <p>
+            Technically you can use Kurza standing up, but why would you?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <h2>FAQ</h2>
+      <div class="faq__items">
+        <details>
+          <summary>Does this work with macOS and Linux?</summary>
+          <p>
+            Yep. Bluetooth HID is a standard. Your OS doesn&rsquo;t care that the &ldquo;mouse&rdquo; is actually a
+            phone running code written at 2 AM.
+          </p>
+        </details>
+        <details>
+          <summary>Do I need to install anything on my computer?</summary>
+          <p>
+            Nope. Zero. Zilch. The whole point is that your computer thinks it&rsquo;s just a regular Bluetooth mouse.
+          </p>
+        </details>
+        <details>
+          <summary>Is this app any good?</summary>
+          <p>
+            It works for me. Your mileage may vary. It was vibe-coded by one person who just wanted to pause YouTube
+            from the couch.
+          </p>
+        </details>
+        <details>
+          <summary>Why &ldquo;Kurza&rdquo;?</summary>
+          <p>
+            Everything was vibe-coded. Even the name.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="cta__content">
+        <h2>Ready to embrace maximum laziness?</h2>
+        <p>
+          Download Kurza, pair it once, and never leave your couch again. Your future self (still on the couch) will
+          thank you.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#" id="cta-google-play-footer">Get it on Google Play</a>
+          <a class="button button--ghost" href="https://github.com/patrikflorek/kurza/issues" target="_blank"
+            rel="noopener">Send feedback (or complaints)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <div class="footer__logo"></div>
+      <span>Kurza</span>
+    </div>
+    <nav class="footer__links">
+      <a href="https://github.com/patrikflorek/patrikflorek.github.io" target="_blank" rel="noopener">Website repo</a>
+      <a href="https://github.com/patrikflorek/kurza" target="_blank" rel="noopener">App source</a>
+      <a href="LICENSE">MIT License</a>
+    </nav>
+    <p class="footer__note">
+      &copy; <span id="year"></span> Patrik Florek. Vibe-coded with questionable judgment.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // TODO: Update CTA links once the Google Play listing is live.
+  </script>
+</body>
+
+</html>
